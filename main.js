@@ -12,9 +12,6 @@ let nbWithoutTransactions = 0;
 let nbWithTransactions = 0;
 let account;
 let isScanning = false;
-
-const itemsPerPage = 10;
-let currentPage = 1;
 const toggleScan = () => {
     const blockButton = document.getElementById('content-scanner');
     const loader = document.createElement('img');
@@ -55,12 +52,6 @@ const updateWithTransactions = (nbWithTransactions) => {
 const updateListAccounts = (account) => {
     const listAccountsContent = document.getElementById('list-accounts-content');
     if (listAccountsContent) {
-
-        const startIndex = (currentPage - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-
-        const accountsToDisplay = listAccountsContent.slice(startIndex, endIndex);
-
         const accountElement = document.createElement('div');
         accountElement.classList.add('data');
 
