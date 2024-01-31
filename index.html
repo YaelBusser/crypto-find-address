@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>CryptoHack</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.10.0/ethers.umd.min.js"
+            type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+            integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<header>
+    <h1>CryptoHack</h1>
+</header>
+<main>
+    <section class="container">
+        <div class="content-informations">
+            <h2>Informations</h2>
+            <div class="internet-status">
+                <p class="text">Internet</p>
+                <p class="online">online</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="content-scanner" id="content-scanner">
+            <h2>Scanner</h2>
+            <button onclick="toggleScan()" id="button">start</button>
+        </div>
+        <div class="content-stats">
+            <h2>Stats</h2>
+            <div class="block-buttons">
+                <button class="button-green">accounts found <span id="accountsFound">0</span></button>
+                <button class="button-red">without transactions <span id="without-transactions">0</span></button>
+                <button class="button-blue">with transactions <span id="with-transactions">0</span></button>
+            </div>
+        </div>
+        <div class="content-accounts">
+            <h2>Accounts</h2>
+            <div class="list-accounts">
+                <div class="list-accounts-header">
+                    <p>passphrase</p>
+                    <p>wallet</p>
+                    <p>transactions</p>
+                </div>
+                <div class="list-accounts-content" id="list-accounts-content"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer></footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "crypto-hack",
+  "version": "1.0.0",
+  "description": "Crypto Hacking",
+  "main": "entry.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.2.0"
+  }
+}
